@@ -1,0 +1,40 @@
+{
+  "name": "NestJS Dev Container",
+  "runArgs": [
+    "--env-file",
+    ".devcontainer/.env",
+    "--network=host",
+    "--name",
+    "NestJS Dev Container"
+  ],
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terraform.languageServer": {
+          "enabled": true,
+          "args": ["serve"]
+        }
+      },
+      "extensions": [
+        "supermaven.supermaven",
+        "github.vscode-github-actions",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "orta.vscode-jest",
+        "naumovs.color-highlight",
+        "ms-azuretools.vscode-docker",
+        "editorconfig.editorconfig",
+        "vscodevim.vim",
+        "mikestead.dotenv",
+        "eamodio.gitlens",
+        "wix.vscode-import-cost",
+        "miguelsolorio.min-theme",
+        "miguelsolorio.symbols",
+        "yoavbls.pretty-ts-errors"
+      ]
+    }
+  }
+}

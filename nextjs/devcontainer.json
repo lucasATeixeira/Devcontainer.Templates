@@ -1,0 +1,34 @@
+{
+  "name": "NextJS Dev Container",
+  "runArgs": [
+    "--env-file",
+    ".devcontainer/.env",
+    "--network=host",
+    "--name",
+    "NextJS Dev Container"
+  ],
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "supermaven.supermaven",
+        "github.vscode-github-actions",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "orta.vscode-jest",
+        "naumovs.color-highlight",
+        "ms-azuretools.vscode-docker",
+        "editorconfig.editorconfig",
+        "vscodevim.vim",
+        "mikestead.dotenv",
+        "eamodio.gitlens",
+        "wix.vscode-import-cost",
+        "miguelsolorio.min-theme",
+        "miguelsolorio.symbols"
+      ]
+    }
+  }
+}

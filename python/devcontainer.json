@@ -1,0 +1,26 @@
+{
+  "name": "Python Dev Container",
+  "runArgs": [
+    "--env-file",
+    ".devcontainer/.env",
+    "--network=host",
+    "--name",
+    "Python Dev Container"
+  ],
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+        "ms-python.isort",
+        "supermaven.supermaven"
+      ]
+    }
+  },
+  "postCreateCommand": "pip3 install --user -r requirements.txt"
+}
