@@ -4,7 +4,7 @@ ENV TZ=America/Sao_Paulo
 ENV DEBIAN_FRONTEND=noninteractive.
 ENV NODE_MAJOR=20
 
-RUN sudo apt-get update
+RUN sudo apt-get update -y && sudo apt-get upgrade -y
 
 # INSTALLING AWS CLI
 RUN apt-get install -y tzdata curl unzip groff less keyboard-configuration && \
