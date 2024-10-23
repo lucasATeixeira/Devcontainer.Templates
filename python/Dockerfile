@@ -1,5 +1,3 @@
-FROM mcr.microsoft.com/devcontainers/python:3.11
+FROM mcr.microsoft.com/devcontainers/python
 
 ENV TZ=America/Sao_Paulo
-
-RUN echo 'export PATH="/workspaces/Bz.Scripts:$PATH"'
